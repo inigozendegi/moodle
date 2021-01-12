@@ -232,7 +232,7 @@ if (!empty($method)) {
             $tag = html_writer::tag('span', get_string('statusdraft', 'core_grading'), array('class' => 'status draft'));
         }
         echo $output->heading(s($definition->name) . ' ' . $tag, 3, 'definition-name');
-        echo $output->box($controller->render_preview($PAGE), 'definition-preview');
+        echo $output->heading(format_string(s($definition->name)) . ' ' . $tag, 3, 'definition-name');
     }
 }
 
